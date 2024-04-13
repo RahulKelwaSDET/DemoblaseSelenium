@@ -1,5 +1,5 @@
 # **Create  login credentials**
-###  update the configuration.property file with username and password from https://www.demoblaze.com/.
+###  Update the configuration.property file with username and password from https://www.demoblaze.com/.
 
 
 
