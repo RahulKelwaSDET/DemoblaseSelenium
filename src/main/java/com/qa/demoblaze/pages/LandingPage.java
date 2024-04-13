@@ -9,6 +9,7 @@ public class LandingPage {
 
 	public LandingPage(WebDriver driver) {
 		this.driver = driver;
+	
 	}
 
 	private By home = By.xpath("//a[text()='Home ']");
