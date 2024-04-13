@@ -7,7 +7,7 @@
 ### JAVA, Maven, Testng.
 
 # **Versions used**
-### Java - 1.8
+### Java - 17.0.2
 ### Selenium - 4.16.1
 ### Testng - 7.9.0
 
