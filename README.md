@@ -1,1 +1,1 @@
-Create  login credentials and update the configuration.property file.
+Create  login credentials from https://www.demoblaze.com/ and update the configuration.property file.
