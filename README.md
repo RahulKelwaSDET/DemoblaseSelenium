@@ -1,7 +1,7 @@
-# **Create  login credentials  **
+# **Create  login credentials**
 ## https://www.demoblaze.com/ and update the configuration.property file.
 
-# R**equired installations**
+# **Required installations**
 ## JAVA, Maven, Testng.
 
 
