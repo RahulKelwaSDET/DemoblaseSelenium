@@ -26,8 +26,7 @@ public class BaseTest {
 		prop = df.initProp();
 		driver = df.initDriver(prop);
 		
-		
-		driver = new ChromeDriver();
+	
 	
 	
 		LandingPage = new LandingPage(driver);
