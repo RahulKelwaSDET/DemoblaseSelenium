@@ -13,9 +13,11 @@ import com.qa.demoblaze.factory.DriverFactory;
 import com.qa.demoblaze.pages.*;
 
 public class BaseTest {
-	WebDriver driver;
-	protected LandingPage LandingPage;
-	protected SignInPage SignInPage;
+	protected WebDriver driver;
+
+	protected SignInPage SignInPage ;
+	protected AccountPage AccountPage;
+	protected ProductLaptopPage ProductLaptopPage;
 	protected DriverFactory df;
 	protected Properties prop;
 
@@ -26,10 +28,13 @@ public class BaseTest {
 		prop = df.initProp();
 		driver = df.initDriver(prop);
 		
+		System.out.println("=========================driver launched succcessfully===========================================================");
+		
 	
 	
 	
-		LandingPage = new LandingPage(driver);
+		 SignInPage = new SignInPage(driver);
+System.out.println("============================= signinpage object created=============================");
 
 	}
 
