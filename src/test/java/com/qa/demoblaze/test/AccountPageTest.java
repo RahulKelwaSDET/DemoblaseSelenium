@@ -14,16 +14,33 @@ public class AccountPageTest extends BaseTest {
 		AccountPage = SignInPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
-	@Test
-	public void logoutLink() throws InterruptedException {
+	@Test(priority = 1)
+	public void logoutLinkTest() throws InterruptedException {
 		Assert.assertTrue(AccountPage.isLogoutLinkexist());
 
 	}
 
-	@Test
-	public void welcomeUser() {
+	@Test(priority = 1)
+	public void welcomeUserTest() {
 
 		Assert.assertTrue(AccountPage.isWelcomeUSertextexist());
 	}
+	
+	@Test(priority = 1)
+	public void laptopLinkTest()
+	{
+		
+		Assert.assertTrue(AccountPage.isLaptopProductLinkExist());
+	}
+	
+	
+	@Test(priority  = 1)
+	public void monitorLinkTest()
+	{
+		Assert.assertTrue(AccountPage.isMonitorsLinkExist());
+		
+	}
+	
+	
 
 }

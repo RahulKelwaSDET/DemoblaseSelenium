@@ -13,10 +13,12 @@ public class SignInPage {
 	private By SignInLink = By.xpath("//a[text()='Log in']");
 	private By login = By.xpath("//button[text()='Log in']");
 	private By WelcomeUsertext = By.xpath("//a[@id='nameofuser']");
+	private By contactLink = By.xpath("//a[text()='Contact']");
+	private By signUpLink = By.xpath("//a[text()='Sign up']");
 
 	public SignInPage(WebDriver driver) {
 
-	this.driver=driver;
+		this.driver = driver;
 	}
 
 	public boolean verifySignInLinkAvailable() {
@@ -24,9 +26,19 @@ public class SignInPage {
 
 	}
 
+	public boolean verifyContactLinkExist() {
+
+		return driver.findElement(contactLink).isDisplayed();
+	}
+
+	public boolean verifySignUpLinkExist() {
+		return driver.findElement(signUpLink).isDisplayed();
+	}
+
 	public AccountPage doLogin(String username, String password) {
-		 driver.findElement(SignInLink).click();
-		System.out.println("================================================came inside the do login========================================");
+		driver.findElement(SignInLink).click();
+		System.out.println(
+				"================================================came inside the do login========================================");
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e1) {
